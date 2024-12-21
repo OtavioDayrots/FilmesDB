@@ -1,0 +1,58 @@
+/* Estilos de página */
+body {
+    background-color: #181616;
+    font-family: 'Arial', Times, serif;
+}
+
+h1{
+    color: #fdfdfd;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+table {
+    margin: 3rem;
+
+    tr, td, th {
+        padding: 1rem;
+        color: #fdfdfd;
+        font-weight: bold;
+    }
+
+    th {
+        background-color: #333; /* Cabeçalho da tabela com fundo cinza */
+    }
+
+    /* Cor de fundo para linhas ímpares e pares */
+    tr:nth-child(odd) {
+        background-color: #1d1d1d;
+    }
+
+    tr:nth-child(even) {
+        background-color: #333;
+    }
+
+    .butao {
+        text-align: center;
+    }
+}
+
+/* Estilos de notificação */
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: 1s;
+    color: #fff;
+}
+
+/* Cores para notificações de sucesso e erro */
+.notificacao.sucesso {
+    background-color: rgb(71, 190, 12);
+}
+
+.notificacao.erro {
+    background-color: rgb(200, 12, 12);
+}

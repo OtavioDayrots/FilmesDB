@@ -1,0 +1,165 @@
+/* Estilo da página */
+body {
+    background-color: #181616;
+    font-family: 'Arial', Times, serif;
+}
+
+h1 {
+    font-size: 28px;
+    color: #fdfdfd;
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+
+.container-cadastro {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.cadastro {
+    text-align: center;
+    padding: 1rem;
+    width: 250px;
+    border-radius: 15px;
+    background-color: #47be0c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+table {
+    margin: 1.5rem auto;
+    width: 80%;
+}
+
+tr, td, th {
+    padding: 1.5rem;
+    color: #fdfdfd;
+    font-weight: bold;
+}
+
+th {
+    background-color: #333;
+}
+
+tr:nth-child(odd) {
+    background-color: #1d1d1d;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+/* Estilo para a coluna que contém a descrição e os botões */
+td.botoes-com-descricao {
+    display: flex;
+    flex-direction: column;/* Flexbox para alinhar a descrição e os botões lado a lado */
+    justify-content: center; /* Espaço entre a descrição e os botões */
+    align-items: center; /* Alinha a descrição e os botões verticalmente */
+    max-width: 100%; /* Garante que a célula não ultrapasse a largura da tabela */
+}
+
+/* Descrição com altura fixa de 80px */
+td.descricao {
+    width: 75%; /* Garante que a descrição ocupe a maior parte do espaço disponível */
+    height: 80px; /* Altura fixa */
+    overflow: hidden; /* Oculta o texto que ultrapassar o limite */
+    text-overflow: ellipsis; /* Exibe "..." quando o texto for cortado */
+    margin-right: 10px; /* Espaço entre a descrição e os botões */
+}
+
+/* Alinhamento e disposição dos botões */
+.butoes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Estilo da notificação */
+.notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: 1s;
+    color: #fff;
+}
+
+.notificacao.sucesso {
+    background-color: #47be0c;
+}
+
+.notificacao.erro {
+    background-color: #c80c0c;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 24px;
+        margin: 1rem;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    tr, td, th {
+        padding: .8rem;
+    }
+
+    td.descricao {
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+/* Responsividade para telas menores */
+@media only screen and (max-width: 500px) {
+    .container-cadastro {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .cadastro {
+        width: 200px;
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .butoes {
+        gap: 0.5rem;
+    }
+
+    .botao {
+        font-size: 0.8rem;
+        padding: 5px;
+        min-width: 40px;
+    }
+
+    td.descricao {
+        height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

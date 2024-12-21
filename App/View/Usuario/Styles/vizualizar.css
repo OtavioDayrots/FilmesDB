@@ -1,0 +1,43 @@
+/* Estilos da página */
+
+/* Define a cor de fundo, cor do texto e fonte da página */
+body {
+    background-color: #181616;
+    color: #fdfdfd;
+    font-family: 'Arial', Times, serif;
+}
+
+/* Estilo da seção principal que contém o conteúdo do filme */
+main {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 25vh; /* Define uma margem superior para posicionamento */
+    width: 600px; /* Largura fixa */
+    background-color: #1d1d1d; /* Cor de fundo */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo dos títulos */
+h1, h3 {
+    padding: 1rem; /* Espaçamento interno */
+}
+
+/* Define o tamanho da fonte do título principal */
+h1 {
+    font-size: 28px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: rgb(71, 190, 12); /* Cor de fundo verde */
+    padding: .5rem; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    margin: 1rem; /* Espaçamento externo */
+    width: 200px; /* Largura fixa */
+}
+
+/* Estilo do link */
+a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff; /* Define a cor do texto do link como branco */
+}

@@ -1,0 +1,99 @@
+/* Estilos da página */
+/* Define a cor de fundo, cor do texto e fonte da página */
+. {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181616;
+    color: #fdfdfd;
+    font-family: 'Arial', Times, serif;
+    margin: 0; /* Remove margens padrão */
+    padding: 0;
+}
+
+/* Estilo da seção principal que contém o conteúdo do filme */
+main {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    margin-top: 5vh; /* Define uma margem superior para posicionamento */
+    width: 600px; /* Largura fixa para telas grandes */
+    background-color: #1d1d1d; /* Cor de fundo */
+    border-radius: 15px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+    padding: 2rem; /* Espaçamento interno */
+}
+
+/* Estilo dos títulos */
+h1, h3 {
+    padding: 1rem; /* Espaçamento interno */
+    margin: 0;
+}
+
+/* Define o tamanho da fonte do título principal */
+h1 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+/* Estilo do botão */
+button {
+    background-color: rgb(71, 190, 12); /* Cor de fundo verde */
+    padding: .5rem; /* Espaçamento interno */
+    border-radius: 15px; /* Bordas arredondadas */
+    width: 200px; /* Largura fixa */
+    display: inline-block; /* Para que o botão se comporte como um bloco inline */
+    text-align: center; /* Centraliza o conteúdo do botão */
+}
+
+/* Estilo do link dentro do botão */
+button a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff; /* Cor do texto */
+    display: block; /* Faz o link ocupar toda a área do botão */
+    text-align: center; /* Centraliza o texto no botão */
+}
+
+/* Estilo da imagem do filme */
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%; /* A imagem vai ocupar 100% da largura do contêiner */
+    border-radius: 10px; /* Bordas arredondadas */
+    object-fit: cover; /* Ajusta a imagem sem distorção */
+}
+
+/* Responsividade */
+
+/* Para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+    main {
+        width: 90%; /* Reduz a largura para 90% da tela */
+    }
+
+    h1 {
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+    }
+
+    button {
+        width: 180px; /* Ajusta a largura do botão */
+    }
+}
+
+/* Para telas menores que 480px */
+@media only screen and (max-width: 480px) {
+    main {
+        width: 95%; /* Reduz a largura para 95% em telas muito pequenas */
+        padding: 1rem; /* Diminui o padding para telas muito pequenas */
+    }
+
+    h1 {
+        font-size: 20px; /* Ajusta ainda mais o tamanho da fonte */
+    }
+
+    button {
+        width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    }
+}
